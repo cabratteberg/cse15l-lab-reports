@@ -1,9 +1,9 @@
 # Lab Report 1
 
 ## cd
-![Image](Screen Shot 2024-01-10 at 1.14.12 PM.png)
 No arguments:
 ---
+![Image](Screen Shot 2024-01-10 at 1.14.12 PM.png)
 The working directory when the command was passed was /home. The output was nothing because we were already in the "outermost" directory so we could not go "up" another directory. The output is not an error.
 
 Directory as argument:
