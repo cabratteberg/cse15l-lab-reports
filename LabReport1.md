@@ -3,7 +3,7 @@
 ## cd
 > No arguments:
 ---
-
+![Image](cd_noArgs1.png)
 The working directory when the command was passed was /home. The output was nothing because we were already in the "outermost" directory so we could not go "up" another directory. The output is not an error.
 
 > Directory as argument:
