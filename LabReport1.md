@@ -3,11 +3,12 @@
 ## cd
 > No arguments:
 ---
-![Image](cd_noArgs.png)
+
 The working directory when the command was passed was /home. The output was nothing because we were already in the "outermost" directory so we could not go "up" another directory. The output is not an error.
 
 > Directory as argument:
 ---
+![Image](cd_noArgs.png)
 The working directory when the command was passed was /home. The output was nothing but our working directory changed to the lecture1 directory because this is what we passed an an argument. The output is not an error.
 
 > File as arguement:
