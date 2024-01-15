@@ -1,6 +1,6 @@
 # Lab Report 1
 
-## cd
+> cd
 No arguments:
 ---
 ![Image](Screen Shot 2024-01-10 at 1.14.12 PM.png)
