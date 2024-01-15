@@ -20,28 +20,34 @@ The working directory when the command was passed was /home/lecture1. The output
 > No arguments:
 ---
 ![Image](ls_noArgs.png)
-The working directory when the command was passed was /home/lecture1. The output was "Hello.class  Hello.java  messages  README" which is the list of all the files and directories contained in the lecture1 directory because this is the working directory when we passed the command. The output is not an error.
+The working directory when the command was passed was /home. The output was "lecture1" which is the only file contained in the /home directory because this is the working directory when we passed the command. The output is not an error.
 
 > Directory as argument:
 ---
 ![Image](ls_direct.png)
-The working directory when the command was passed was /home/lecture1. The output was "en-us.txt  es-mx.txt  no-nb.txt  zh-cn.txt" which is the list of all the names of the text files stored within the messages directory which we passed as an arguement. The output is not an error.
+The working directory when the command was passed was /home. The output was "Hello.class  Hello.java  messages  README" which is the list of all the names of the files stored within the lecrture1 directory which we passed as an argument. The output is not an error.
 
 > File as arguement:
 ---
 ![Image](ls_file.png)
-The working directory when the command was passed was /home/lecture1/messages/. The output was "en-us.txt" because this is the only file that is stored under the directory of en-us.txt which we passed as an argument. The output is not an error.
+The working directory when the command was passed was /home. The output was "Hello.java" because this is the only file that is stored in the file of Hello.java which we passed as an argument. The output is not an error.
 
 ## cat
 > No arguments:
 ---
 ![Image](cat_noArgs.png)
-The working directory when the command was passed was 
+The working directory when the cat command was passed was /home. There was no output because there was no file specified to read from and no error but instead the terminal took standard input from the keyboard. I typed in "Hello" and "Hello" was printed out. 
 
 > Directory as argument:
 ---
 ![Image](cat_direct.png)
-
+The working directory when the cat command was passed was /lecture1. The output was "cat: messages: Is a directory" because we passed a directory as an argument so there is no content to be printed out. The output is not an error.
 > File as argument:
 ---
 ![Image](cat_file.png)
+The working directory when the cat command was passed was /lecture1/messages. The output was
+```
+Hello World!
+¡Hola Mundo!
+```
+because these are the contents of the files passed as arguments. The output is not an error.
