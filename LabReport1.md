@@ -4,7 +4,7 @@
 > No arguments:
 ---
 ![Image](cd_noArgs1.png)
-The working directory when the command was passed was /home. The output was nothing because cd with no arguments changes the directory to the "outermost" directory but we were already in the "outermost" directory. The output is not an error.
+The working directory when the command was passed was /home. The output was nothing because cd with no arguments changes the directory to the "outermost" directory but we were already in the "outermost" or home directory. The output is not an error.
 
 > Directory as argument:
 ---
@@ -20,17 +20,17 @@ The working directory when the command was passed was /home/lecture1. The output
 > No arguments:
 ---
 ![Image](ls_noArgs.png)
-The working directory when the command was passed was /home. The output was "lecture1" which is the only file contained in the /home directory because this is the working directory when we passed the command. The output is not an error.
+The working directory when the command was passed was /home. The output was "lecture1" which is the only item contained in the /home directory because this is the working directory when we passed the command. The output is not an error.
 
 > Directory as argument:
 ---
 ![Image](ls_direct.png)
-The working directory when the command was passed was /home. The output was "Hello.class  Hello.java  messages  README" which is the list of all the names of the files stored within the lecrture1 directory which we passed as an argument. The output is not an error.
+The working directory when the command was passed was /home. The output was "Hello.class  Hello.java  messages  README" which is the list of all the names of the items stored within the lecture1 directory which we passed as an argument. The output is not an error.
 
 > File as arguement:
 ---
 ![Image](ls_file.png)
-The working directory when the command was passed was /home. The output was "Hello.java" because this file is stored in the current working direcory and the ls command checks if the file is in the current working directory and it is. The output is not an error.
+The working directory when the command was passed was /home. The output was "Hello.java" because this file is stored in the current working directory and the ls command checks if the file is in the current working directory and it is. The output is not an error.
 
 ## cat
 > No arguments:
