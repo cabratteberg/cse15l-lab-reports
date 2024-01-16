@@ -42,6 +42,7 @@ The working directory when the cat command was passed was /home. There was no ou
 ---
 ![Image](cat_direct.png)
 The working directory when the cat command was passed was /lecture1. The output was "cat: messages: Is a directory" because we passed a directory as an argument so there is no content to be printed out. The output is not an error.
+
 > File as argument:
 ---
 ![Image](cat_file.png)
