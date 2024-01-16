@@ -4,7 +4,7 @@
 > No arguments:
 ---
 ![Image](cd_noArgs1.png)
-The working directory when the command was passed was /home. The output was nothing because we were already in the "outermost" directory so we could not go "up" another directory. The output is not an error.
+The working directory when the command was passed was /home. The output was nothing because cd with no arguments changes the directory to the "outermost" directory but we were already in the "outermost" directory. The output is not an error.
 
 > Directory as argument:
 ---
@@ -30,7 +30,7 @@ The working directory when the command was passed was /home. The output was "Hel
 > File as arguement:
 ---
 ![Image](ls_file.png)
-The working directory when the command was passed was /home. The output was "Hello.java" because this is the only file that is stored in the file of Hello.java which we passed as an argument. The output is not an error.
+The working directory when the command was passed was /home. The output was "Hello.java" because this file is stored in the current working direcory and the ls command checks if the file is in the current working directory and it is. The output is not an error.
 
 ## cat
 > No arguments:
@@ -41,7 +41,7 @@ The working directory when the cat command was passed was /home. There was no ou
 > Directory as argument:
 ---
 ![Image](cat_direct.png)
-The working directory when the cat command was passed was /lecture1. The output was "cat: messages: Is a directory" because we passed a directory as an argument so there is no content to be printed out. The output is not an error.
+The working directory when the cat command was passed was /lecture1. The output was an error message stating "cat: messages: Is a directory" because we passed a directory as an argument and the cat command cannot read the content stored in a directory.
 
 > File as argument:
 ---
