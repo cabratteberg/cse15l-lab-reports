@@ -1,6 +1,6 @@
 # Lab Report 1
 
-## cd
+## `cd`
 > No arguments:
 ---
 ![Image](cd_noArgs1.png)
@@ -16,7 +16,7 @@ The working directory when the command was passed was /home. The output was noth
 ![Image](cd_file.png)
 The working directory when the command was passed was /home/lecture1. The output was an error message that said "bash: cd: en-us.txt: Not a directory" because we were trying to change the directory to a file and this is not possible because the file is not a directory.
 
-## ls
+## `ls`
 > No arguments:
 ---
 ![Image](ls_noArgs.png)
@@ -32,7 +32,7 @@ The working directory when the command was passed was /home. The output was "Hel
 ![Image](ls_file.png)
 The working directory when the command was passed was /home. The output was "Hello.java" because this file is stored in the current working directory and the ls command checks if the file is in the current working directory and it is. The output is not an error.
 
-## cat
+## `cat`
 > No arguments:
 ---
 ![Image](cat_noArgs.png)
