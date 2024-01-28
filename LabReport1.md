@@ -14,7 +14,7 @@ The working directory when the command was executed was `/home`. The output was 
 > File as argument:
 ---
 ![Image](cd_file.png)
-The working directory when the command was executed was `/home/lecture1`. The output was an error message that said `bash: cd: en-us.txt: Not a directory` because we were trying to change the directory to a file and this is not possible because the file is not a directory.
+The working directory when the command was executed was `/home/lecture1/messages`. The output was an error message that said `bash: cd: en-us.txt: Not a directory` because we were trying to change the directory to a file and this is not possible because the file is not a directory.
 
 ## `ls`
 > No arguments:
