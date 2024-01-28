@@ -46,7 +46,7 @@ The working directory when the `cat` command was executed was `/home/lecture1`. 
 > File as argument:
 ---
 ![Image](cat_file.png)
-The working directory when the `cat` command was executed was /home/lecture1/messages. The output was
+The working directory when the `cat` command was executed was `/home/lecture1/messages`. The output was
 ```
 Hello World!
 ¡Hola Mundo!
