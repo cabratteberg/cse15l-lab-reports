@@ -30,7 +30,7 @@ The working directory when the command was executed was `/home`. The output was 
 > File as argument:
 ---
 ![Image](ls_file.png)
-The working directory when the command was executed was `/home`. The output was `Hello.java` because this file is stored in the current working directory and the `ls` command checks if the file is in the current working directory and it is. The output is not an error.
+The working directory when the command was executed was `/home/lecture1`. The output was `Hello.java` because this file is stored in the current working directory and the `ls` command checks if the file is in the current working directory and it is. The output is not an error.
 
 ## `cat`
 > No arguments:
