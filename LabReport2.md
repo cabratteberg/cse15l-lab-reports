@@ -101,3 +101,5 @@ The second line in the screenshot above contains the absolute path for the priva
 ![Image](ssh_noLogin.png)
 
 # Part 3
+
+Most of the stuff we learned in lab was completely new to me. Some things that stood out to me that I found helpful was being able to use the `ssh` command to connect to a remote server such as our CSE15L account. I also thought that being able to build and run our own web servers using `Server.java` and `NumberServer.java` as templates was very interesting. 
