@@ -90,7 +90,8 @@ public class Server {
     }
 }
 ```
-
+![Image](ChatServer_SS1.png)
+![Image](ChatServer_SS2.png)
 
 # Part 2
 ![Image](absPaths_priv&pub.png)
@@ -98,3 +99,5 @@ public class Server {
 The second line in the screenshot above contains the absolute path for the private key and the fourth line contains the absolute path for the public key. 
 
 ![Image](ssh_noLogin.png)
+
+# Part 3
