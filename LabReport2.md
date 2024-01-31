@@ -1,11 +1,11 @@
 # Part 1
+`ChatServer.java`
 ```
 import java.io.IOException;
 import java.net.URI;
 
 class Handler implements URLHandler {
-    // The one bit of state on the server: a number that will be manipulated by
-    // various requests.
+
     String str = "";
 
     public String handleRequest(URI url) {
@@ -39,6 +39,8 @@ class ChatServer {
     }
 }
 ```
+
+`Server.java`
 ```
 import java.io.IOException;
 import java.io.OutputStream;
@@ -59,7 +61,6 @@ class ServerHttpHandler implements HttpHandler {
       this.handler = handler;
     }
     public void handle(final HttpExchange exchange) throws IOException {
-        // form return body after being handled by program
         try {
             String ret = handler.handleRequest(exchange.getRequestURI());
             // form the return string and write it on the browser
@@ -81,20 +82,20 @@ public class Server {
     public static void start(int port, URLHandler handler) throws IOException {
         HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
 
-        //create request entrypoint
         server.createContext("/", new ServerHttpHandler(handler));
 
-        //start the server
         server.start();
         System.out.println("Server Started!");
     }
 }
 ```
 
-For both `add-message` examples, the main method in `ChatServer.java` is called with the argument of a port number of 4010 for the server. The main method calls the `start` method in `Server.java` which has the arguments of a port number of type int and a handler of type URLHandler. The port number is the argument from the main method and the handler is a new object of type Handler. 
+For both `/add-message` examples pictured below, the main method in `ChatServer.java` is called with the argument of a port number of 4010 for the server. The main method calls the `start` method in `Server.java` which has the arguments of a port number of type int and a handler of type URLHandler. The port number is the argument from the main method and the handler is a new object of type Handler. The `start` method starts a new server with the given port number and handler. When the user executes the `/add-message' command, the `handleRequest` method is called with the user's url of type URI as an argument. 
 
 ![Image](ChatServer_SS1.png)
+In the above example, the `str` field is updated to `"Jpolitz: Hello" + "\n"` when it used to be `""` because it updated according to the information in the url.
 ![Image](ChatServer_SS2.png)
+In the above example, the `str` field is updated to `"Jpolitz: Hello" + "\n" + "cam: hi:)" + "\n"` when it used to be `Jpolitz: Hello" + "\n"` because it updated according to the information in the url.
 
 # Part 2
 ![Image](absPaths_priv&pub.png)
