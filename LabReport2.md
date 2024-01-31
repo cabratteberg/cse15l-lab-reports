@@ -93,9 +93,9 @@ public class Server {
 For both `/add-message` examples pictured below, the main method in `ChatServer.java` is called with the argument of a port number of 4010 for the server. The main method calls the `start` method in `Server.java` which has the arguments of a port number of type int and a handler of type URLHandler. The port number is the argument from the main method and the handler is a new object of type Handler. The `start` method starts a new server with the given port number and handler. When the user executes the `/add-message` command, the `handleRequest` method is called with the user's url of type URI as an argument. 
 
 ![Image](ChatServer_SS1.png)
-In the above example, the `str` field is updated to `"Jpolitz: Hello" + "\n"` when it used to be `""` because it updated according to the information in the url when it is passed as an argument to the `handleRequest` method.
+In the above example, the `str` field is updated to `"jpolitz: Hello" + "\n"` when it used to be `""` because it updated according to the information in the url `s=Hello&user=jpolitz` when it is passed as an argument to the `handleRequest` method.
 ![Image](ChatServer_SS2.png)
-In the above example, the `str` field is updated to `"Jpolitz: Hello" + "\n" + "cam: hi:)" + "\n"` when it used to be `Jpolitz: Hello" + "\n"` because it updated according to the information in the url when it is passed as an argument to the `handleRequest` method. It is concatenated to the existing message that was added in the previous example on a new line indicated by `"\n"`.
+In the above example, the `str` field is updated to `"jpolitz: Hello" + "\n" + "cam: hi:)" + "\n"` when it used to be `Jpolitz: Hello" + "\n"` because it updated according to the information in the url `s=Hi:)&user=cam` when it is passed as an argument to the `handleRequest` method. It is concatenated to the existing message that was added in the previous example on a new line indicated by `"\n"`.
 
 # Part 2
 ![Image](absPaths_priv&pub.png)
