@@ -95,7 +95,7 @@ For both `/add-message` examples pictured below, the main method in `ChatServer.
 ![Image](ChatServer_SS1.png)
 In the above example, the `str` field is updated to `"jpolitz: Hello" + "\n"` when it used to be `""` because it updated according to the information in the url `s=Hello&user=jpolitz` when it is passed as an argument to the `handleRequest` method.
 ![Image](ChatServer_SS2.png)
-In the above example, the `str` field is updated to `"jpolitz: Hello" + "\n" + "cam: hi:)" + "\n"` when it used to be `Jpolitz: Hello" + "\n"` because it updated according to the information in the url `s=Hi:)&user=cam` when it is passed as an argument to the `handleRequest` method. It is concatenated to the existing message that was added in the previous example on a new line indicated by `"\n"`.
+In the above example, the `str` field is updated to `"jpolitz: Hello" + "\n" + "cam: Hi:)" + "\n"` when it used to be `Jpolitz: Hello" + "\n"` because it updated according to the information in the url `s=Hi:)&user=cam` when it is passed as an argument to the `handleRequest` method. It is concatenated to the existing message that was added in the previous example on a new line indicated by `"\n"`.
 
 # Part 2
 ![Image](absPaths_priv&pub.png)
