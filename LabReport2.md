@@ -90,6 +90,9 @@ public class Server {
     }
 }
 ```
+
+For both `add-message` examples, the main method in `ChatServer.java` is called with the argument of a port number of 4010 for the server. The main method calls the `start` method in `Server.java` which has the arguments of a port number of type int and a handler of type URLHandler. The port number is the argument from the main method and the handler is a new object of type Handler. 
+
 ![Image](ChatServer_SS1.png)
 ![Image](ChatServer_SS2.png)
 
@@ -102,4 +105,4 @@ The second line in the screenshot above contains the absolute path for the priva
 
 # Part 3
 
-Most of the stuff we learned in lab was completely new to me. Some things that stood out to me that I found helpful was being able to use the `ssh` command to connect to a remote server such as our CSE15L account. I also thought that being able to build and run our own web servers using `Server.java` and `NumberServer.java` as templates was very interesting. 
+Most of the concepts we learned in lab the past two weeks were completely new to me. Some things that stood out to me that I found helpful was being able to use the `ssh` command to connect to a remote server such as our CSE15L account. I also thought that being able to build and run our own web servers using `Server.java` and `NumberServer.java` as templates was very interesting. 
