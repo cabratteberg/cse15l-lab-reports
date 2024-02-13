@@ -15,6 +15,8 @@
    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input));
 }
 ```
+## The Symptom
+![Image](lab3_symptom.png)
 ## The Bug: Before Code
 ```
   static int[] reversed(int[] arr) {
@@ -35,4 +37,5 @@
     return newArray;
   }
 ```
+The code fix of swapping the assingment from `arr[i]` to `newArray[arr.length - i - 1]` to `newArray[arr.length - i - 1]` to `arr[i]` addresses the issue because before the code was assigning the values of the original array to the values of the newArray which was all the intial value of 0 and then returning the original array. This did not give the expected output because instead of reversing the array, it set all of the array values to 0. The fixed code instead assigns the appropriate index of the new array to the index of the original array, changing the values of the new array to the reversed values of the original array and then returns the new reversed array which is the desired outcome.
 # Part 2
