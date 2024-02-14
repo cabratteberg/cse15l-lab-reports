@@ -44,7 +44,7 @@ The code fix of swapping the assingment from `arr[i]` to `newArray[arr.length - 
 camillabratteberg@Camillas-MacBook-Air technical % grep -c "planes" 911report/chapter-1.txt
 16
 ```
-In the above example, I used the -c command-line option for the grep command. This prints the number of lines that have a match with the string that I provide as an arguement which in this case was `"planes"`. This is useful because I am able to see how many times the word "planes" appears in the provided file and I could make inferences about what information is in the text without having to read all of it.
+In the above example, I used the `-c` command-line option for the grep command. This prints the number of lines that have a match with the string that I provide as an argument which in this case was `"planes"`. This is useful because I am able to see how many times the word "planes" appears in the provided file and I could make inferences about what information is in the text without having to read all of it.
 ```
 camillabratteberg@Camillas-MacBook-Air technical % grep -cR "genetics" biomed
 biomed/1472-6807-2-2.txt:0
@@ -114,7 +114,7 @@ camillabratteberg@Camillas-MacBook-Air technical % grep -C 3 "parasitic" biomed/
           declare a match. The remaining sequences provided our
           final set of candidates for horizontally transferred
 ```
-In the above example, I used the `-C` command-line option for the grep command. This prints lines that have a match with the string that I provide as an argument which in this case was `"parasitic"` and a certain number of lines before and after provided as an argument. This would be useful if you want to find information about a specific topic and want context around the instance, not just one line.
+In the above example, I used the `-C` command-line option for the grep command. This prints lines that have a match with the string that I provide as an argument which in this case was `"parasitic"` and a certain number of lines before and after provided as an argument which in this case was 3. This would be useful if you want to find information about a specific topic and want context around the instance, not just one line.
 ```
 camillabratteberg@Camillas-MacBook-Air technical % grep -C 2 "Chile" plos/journal.pbio.0020001.txt
         Among Latin American countries, there is a high degree of variability in publication
@@ -126,7 +126,7 @@ camillabratteberg@Camillas-MacBook-Air technical % grep -C 2 "Chile" plos/journa
         Rica, Cuba, Brazil, and Chile, have invested a much greater proportion of their GDP in
         research and development than the other countries of this region (Albornoz 2001).
 ```
-In the above example, I used the `-C` command-line option for the grep command. This prints lines that have a match with the string that I provide as an argument which in this case was `"Chile"` and a certain number of lines before and after provided as an argument. This is useful because I am able to quickly find information about the "Chile" in the text file. 
+In the above example, I used the `-C` command-line option for the grep command. This prints lines that have a match with the string that I provide as an argument which in this case was `"Chile"` and a certain number of lines before and after provided as an argument which in this case was 2. This is useful because I am able to quickly find information about Chile in the text file. 
 
 ## -n
 ```
@@ -138,7 +138,7 @@ camillabratteberg@Camillas-MacBook-Air technical % grep -n "Longabaugh" governme
 493:Longabaugh commented that an NIAAA effort to conduct research on
 547:Longabaugh remarked that NIH is increasingly trying to
 ```
-In the above example, I used the `-n` command-line option for the grep command. This prints lines that have a match with the string that I provide as an argument which in this case was the name "Longabaugh" and the corresponding line number. This is useful if you want to find instances of a certain word and which lines they are used in so you would know where in the file to look to find more information.
+In the above example, I used the `-n` command-line option for the grep command. This prints lines that have a match with the string that I provide as an argument which in this case was the name "Longabaugh" and the corresponding line number. This is useful if you want to find instances of a certain phrase and which lines they are used in so you would know where in the file to look to find more information.
 ```
 camillabratteberg@Camillas-MacBook-Air technical % grep -nR "drugs" 911report
 911report/chapter-3.txt:134:                traditional crimes such as white-collar offenses and those pertaining to drugs and
