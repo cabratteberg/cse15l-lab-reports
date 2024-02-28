@@ -18,4 +18,4 @@ Keys pressed: `<up>``<up>``<up>``<enter>` because the `javac ... ` command was 3
 because the "java ... " command was now 3 up in the search history so I used the up arrows to access it. After executing these two commands, the JUnit tests ran successfully with no failures. 
 
 ## Step 9
-I typed `git add ListExamples.java``<enter>` which adds the file with changes in it to be committed `git commit -m "Changed index1 to index2"` `<enter>` `git push origin main` `<enter>`
+I typed `git add ListExamples.java``<enter>` which adds the file with changes in it to be committed, then I typed `git commit -m "Changed index1 to index2"``<enter>` to commit the changes made to the file and adds a message I input describing the nature of the changes,  then I typed `git push origin main``<enter>` to push the changes to my branched repository on GitHub.
