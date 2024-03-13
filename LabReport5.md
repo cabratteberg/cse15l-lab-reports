@@ -63,7 +63,7 @@ Are there any special ways you could use the `find` command we learned about in 
 ## Student Response:
 
 Thank you! I was able to fix the bug. The issue was that my original code in line 11 was only looking in the `student-submission` directory for the file but once I changed that line to 
-`find student-submission -name "ListExamples.java" -exec cp {} grading-area \;` the bug was fixed because now the program was able to copy the file regardless of which directory it was in
+`find student-submission -name "ListExamples.java" -exec cp {} grading-area \;` the bug was fixed because now the program was able to copy the file regardless of which nested directory it was in
 due to the use of the `find` command. I have attatched a screenshot of my results now after using your feedback!
 ![Image](Lab5-StudentPic2.png)
 
