@@ -8,9 +8,9 @@ In my repository I used `<Cmd>` + `<C>` to copy the ssh link which is `git@githu
 
 ## Step 6
 ![Image](Step6-LabReport4.png)
-I typed in `cd Lab7` `<Enter>` to change my directory to the Lab7 directory containing the needed files. Then, after I `<Cmd>` + `<C>` from the Week 4 module in the course website, I `<Cmd>` + `<V>` which pasted `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar` into my terminal. Then I typed in `<Space>``ListExamplesTests.java` `<enter>` which compiled the JUnit tests in the ListExamplesTests.java file. 
+I typed in `cd Lab7` `<Enter>` to change my directory to the Lab7 directory containing the needed files. Then, after I `<Cmd>` + `<C>` from the Week 4 module in the course website, I `<Cmd>` + `<V>` which pasted `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar` into my terminal. Then I typed in `<Space>` `ListExamplesTests.java` `<enter>` which compiled the JUnit tests in the ListExamplesTests.java file. 
 
-Then, after I `<Cmd>` + `<C>` from the Week 4 module in the course website, I `<Cmd>` + `<V>` which pasted `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore` into my terminal. Then I typed in `<Space>``ListExamplesTests` `<enter>` which ran these tests. 
+Then, after I `<Cmd>` + `<C>` from the Week 4 module in the course website, I `<Cmd>` + `<V>` which pasted `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore` into my terminal. Then I typed in `<Space>` `ListExamplesTests` `<enter>` which ran these tests. 
 
 ## Step 7
 ![Image](Step7-LabReport4.png)
