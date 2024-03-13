@@ -5,7 +5,7 @@ Hi, I am struggling with a bug in my grading script because whenever I run the `
 My list-examples-grader contains four different files: `GradeServer.java` `Server.java` `TestListExamples.java` `grade.sh`.
 I think there is an issue with my `grade.sh` file in the part of the code where it copies the student's `*.java` file into the `grading-area`. However, I am not sure how to fix this bug. 
 Please help. I have attatched my code for my `grade.sh` file and a screenshot of the symptom of the bug.
-![Image](Lab-StudentPic1.png)
+![Image](Lab5-StudentPic1.png)
 `grade.sh`
 ```
 CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
