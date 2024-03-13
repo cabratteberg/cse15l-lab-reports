@@ -1,7 +1,7 @@
 # Part 1
 ## Student Post:
 
-Hi, I am struggling with a bug in my grading script because whenever I run the `bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-nested` command, I get unexpected output.
+Hi, I am struggling with a bug in my grading script because whenever I run the `bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-nested` command, I get unexpected output. I would expect the student to get a full score but instead I am getting output saying that their `ListExamples.java` file was not found.
 My list-examples-grader contains four different files: `GradeServer.java` `Server.java` `TestListExamples.java` `grade.sh`.
 I think there is an issue with my `grade.sh` file in the part of the code where it copies the student's `*.java` file into the `grading-area`. However, I am not sure how to fix this bug. 
 Please help. I have attatched my code for my `grade.sh` file and a screenshot of the symptom of the bug.
@@ -21,7 +21,7 @@ echo 'Finished cloning'
 cp student-submission/*.java grading-area
 cp TestListExamples.java grading-area 
 cp -r lib grading-area
-S
+
 cd grading-area
 
 
@@ -55,3 +55,14 @@ else
     echo "Score: $Percentage%"
 fi
 ```
+
+## TA Response:
+
+Are there any special ways you could use the `find` command we learned about in class to fix your bug in the line where you are creating a copy of the student's file?
+
+## Student Response:
+
+Thank you! I was able to fix the bug. The issue was that my original code in line 11 was only looking in the `student-submission` directory for the file but once I changed that line to 
+`find student-submission -name "ListExamples.java" -exec cp {} grading-area \;` the bug was fixed because now the program was able to copy the file regardless of which directory it was in
+due to the use of the `find` command. I have attatched a screenshot of my results now after using your feedback!
+![Image](Lab5-StudentPic2.png)
